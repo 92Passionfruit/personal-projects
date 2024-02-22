@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>employeesatisfaction</title>
+    <link rel="stylesheet" href="employeeform.css"/>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Job Satisfaction Form</h1>
+      <p id="description">This is a 5 to 10 minute survey for employees of [company name] to understand the working conditions, professional expectations and overall satisfaction of our team members. <br>
+      <br>
+      Your responses are confidential and will be used only to improve the working experience at [company name].<p/>
+      <form>
+        <fieldset>
+          <label for="name" id="name-label">Full Name: <input required type="text" id="name" placeholder="Claire Voyant"></label>
+          <br>
+          <label for="email" id="email-label">Work Email: <input required type="text" id="email" placeholder="clairevoyant8@gmail.com"></label>
+          <br>
+          <label for="date" id="date-label">Date: <input required type="date" id="date"></label>
+          <br>
+          <label for="dropdown" id="dropdown-label">Length of employment: <select id="dropdown">
+            <option value="dropdown">(select one)</option>
+            <option value="1">>1 year</option>
+            <option value="2">1-2 years</option>
+            <option value="3">2-5 years</option>
+            <option value="4">6-10 years</option>
+            <option value="5"><10 years</option>
+            </select>
+            </label>
+        </fieldset>
+<fieldset><legend>Overall job satisfaction</legend>
+          <label for="low"><input required type="radio" id="low" name="scale1">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale1">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale1">[3] high</label>
+        </fieldset>        <fieldset><legend>Appreciation and recognition</legend>
+          <label for="low"><input required type="radio" id="low" name="scale2">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale2">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale2">[3] high</label>
+        </fieldset>
+        <fieldset><legend>Manager communication and support</legend>
+          <label for="low"><input required type="radio" id="low" name="scale3">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale3">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale3">[3] high</label>
+        </fieldset>
+        <fieldset><legend>Access to tools and resources</legend>
+          <label for="low"><input required type="radio" id="low" name="scale4">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale4">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale4">[3] high</label>
+        </fieldset>
+        <fieldset><legend>Opportunities for professional growth</legend>
+          <label for="low"><input required type="radio" id="low" name="scale5">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale5">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale5">[3] high</label>
+        </fieldset>
+        <fieldset><legend>Salary, compensation and benefits</legend>
+          <label for="low"><input required type="radio" id="low" name="scale6">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale6">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale6">[3] high</label>
+        </fieldset>
+        <fieldset><legend>Work-life balance</legend>
+          <label for="low"><input required type="radio" id="low" name="scale7">[1] low</label>
+          <label for="moderate"><input required type="radio" id="moderate" name="scale7">[2] moderate</label>
+          <label for="high"><input required type="radio" id="high" name="scale7">[3] high</label>
+        </fieldset>
+        <fieldset required><legend>Suggestions for improvement</legend>
+          <label for="suggestions">What changes would you like to at our company? <input type="textarea" id="suggestions"></label>
+        </fieldset>
+        <fieldset required><legend>What are our company's strengths?</legend>
+          <label for="strength1"><input type="checkbox" id="strength1" value="strength1">Positive/inclusive workplace culture</label>
+          <br>
+          <label for="strength2"><input type="checkbox" id="strength2" value="strength2">Adequately challenging employees</label>
+          <br>
+          <label for="strength3"><input type="checkbox" id="strength3" value="strength3">Realistic work expectations</label>
+          <br>
+          <label for="strength4"><input type="checkbox" id="strength4" value="strength4">Feedback cycles/practices</label>
+          <br>
+          <label for="strength5"><input type="checkbox" id="strength5" value="strength5">Other</label>
+          <label for="strength5"><input placeholder="please elaborate here" type="textarea" id="strength5"></label>
+        </fieldset>
+        <fieldset>
+          <label for="number" id="number-label">How likely are you to reccommend our company to a friend as a good place to work? <input required type="number" min="1" max="10" id="number" placeholder="10"><br><em>(1 = extremely unlikely, 10 = extremely likely)</em> </label>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

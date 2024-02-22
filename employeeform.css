@@ -1,0 +1,51 @@
+body {
+    background-color: #088F8F;
+    color: 	#FFB6C1; 
+    font-family: garamond;
+    font-size: 1.2em;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 0.4em;
+    margin-bottom: 0;
+  }
+  p {
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+  }
+  fieldset,label  {
+    background-color: 088F8F;
+    color: #FFB6C1;
+  
+  }
+  legend {
+    font-weight: 700;
+    font-size: 1.2em
+  }
+  input {
+    font-family: garamond;
+    color: #088F8F;
+    font-weight: 600;
+    text-align: center;
+    background-color:#FFF5EE;
+    border-color: #FFB6C1; 
+  }
+  
+  select,input::placeholder{
+    color: #088F8F;
+    font-family: garamond;
+    background-color:#FFF5EE; 
+    border-color: #FFB6C1;
+    border-width: 2;
+  }
+  hr {
+    border: 3px solid #FFB6C1;
+    margin-top: 1em;
+  }
+  .personal-details {
+    border: none;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+    margin-left: 8em;
+  }
+  
