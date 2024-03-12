@@ -351,7 +351,7 @@ giftButton.style.fontSize = "1.2rem";
 giftButton.style.fontWeight = "800";
 giftButton.style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
 giftButton.onclick = function() {
-  window.location.href = 'https://example.com'; // Change the URL to your desired hyperlink
+  window.location.href = 'https://92passionfruit.github.io/offering/';
 };
   }
   
