@@ -61,7 +61,7 @@ const locations = [
     {
       name: "truth",
       "button text": ["Fight independent thought", "Fight society", "Return to your yurt"],
-      "button functions": [fightThought, winGame, goYurt],
+      "button functions": [fightThought, fightSociety, goYurt],
       text: "You follow your truth, but it won't come easily."
     },
     {
@@ -312,34 +312,20 @@ button3.onclick = goYurt;
     follower1.src = "https://preview.redd.it/patch-notes-1-1-5-v0-f8awrb2dfcsa1.gif?width=194&auto=webp&s=34ea76918584d5b33804319d1ec59a0bf9b48914";
     follower2.src = "https://preview.redd.it/patch-notes-1-1-5-v0-f8awrb2dfcsa1.gif?width=194&auto=webp&s=34ea76918584d5b33804319d1ec59a0bf9b48914";
     follower3.src = "https://preview.redd.it/patch-notes-1-1-5-v0-f8awrb2dfcsa1.gif?width=194&auto=webp&s=34ea76918584d5b33804319d1ec59a0bf9b48914";
-    winImg.style.display = "flex";
-    winImg.style.flexDirection = "row";
-    winImg.style.justifyContent = "center";
-    winImg.style.padding = "1rem";
-    winImg.style.maxWidth = "550px";
-leader.style.display = "block";
-leader.style.margin = "0 auto"; 
-leader.style.width = "6rem"; 
-leader.style.height = "6rem"; 
-
-follower1.style.display = "block";
-follower1.style.margin = "0 auto"; 
-follower1.style.width = "3rem"; 
-follower1.style.height = "5rem";
-
-follower2.style.display = "block";
-follower2.style.margin = "0 auto";
-follower2.style.width = "3rem"; 
-follower2.style.height = "5rem"; 
-
-follower3.style.display = "block";
-follower3.style.margin = "0 auto"; 
-follower3.style.width = "3rem"; 
-follower3.style.height = "5rem"; 
+    follower4.src = "https://preview.redd.it/patch-notes-1-1-5-v0-f8awrb2dfcsa1.gif?width=194&auto=webp&s=34ea76918584d5b33804319d1ec59a0bf9b48914";
+    follower5.src = "https://preview.redd.it/patch-notes-1-1-5-v0-f8awrb2dfcsa1.gif?width=194&auto=webp&s=34ea76918584d5b33804319d1ec59a0bf9b48914";
+     
+winImg.style.display = "inline-block";
+  leader.style.display = "inline-block";
+  follower1.style.display = "inline-block";
+  follower2.style.display = "inline-block";
+  follower3.style.display = "inline-block";
+  follower4.style.display = "inline-block";
+  follower5.style.display = "inline-block";
 
 const giftButton = document.createElement('button'); 
 document.body.appendChild(giftButton);
-giftButton.textContent = "❤️ OFFERING ❤️";
+giftButton.textContent = "OFFERING 🎁";
 giftButton.style.display = "block";
 giftButton.style.margin = "0 auto";
 giftButton.style.width = "12rem";
@@ -350,6 +336,18 @@ giftButton.style.border = "4px dashed #d4af37";
 giftButton.style.fontSize = "1.2rem";
 giftButton.style.fontWeight = "800";
 giftButton.style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+giftButton.addEventListener('mouseenter', function() {
+  giftButton.textContent = "OFFERING ❤️";
+   giftButton.style.backgroundImage = "linear-gradient(#d4af37, #b38e2e)";
+  giftButton.style.border = "4px dashed #232b2b";
+  giftButton.style.color = "#232b2b";
+});
+giftButton.addEventListener('mouseleave', function() {
+  giftButton.textContent = "OFFERING 🎁";
+  giftButton.style.backgroundImage = "linear-gradient(#232b2b, #0e1111)";
+  giftButton.style.border = "4px dashed #d4af37";
+  giftButton.style.color = "#d4af37";
+});
 giftButton.onclick = function() {
   window.location.href = 'https://92passionfruit.github.io/offering/';
 };

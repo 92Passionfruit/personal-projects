@@ -50,14 +50,30 @@ h1 {
     background-color: #c70d0d;
   }
 
-  #leader, #follower1, #follower2, #follower3 {
-    display: none;
-  }
   #win-img {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem 29% 1rem 29%;
+    width: 600px;
     display: none;
-    width: 550px;
 }
 
+#leader, .follower {
+  margin: 0 auto;
+  display: none;
+}
+
+#leader {
+  width: 6rem;
+  height: 6rem;
+  padding-right: 3rem;
+}
+
+.follower {
+  width: 3rem;
+  height: 5rem;
+  padding: 0 1rem;
+}
   .stat {
     padding-right: 15px;
     padding-left: 15px;
